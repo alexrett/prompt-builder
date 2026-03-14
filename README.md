@@ -18,34 +18,20 @@ A native macOS app for assembling LLM context prompts from your codebase. Select
 
 ## Output Format
 
-```xml
-<file_map>
-/path/to/project
-├── src
-│   ├── api
-│   │   └── client.ts *
-│   └── main.tsx *
-└── package.json
+The generated prompt has three XML sections:
 
-(* denotes selected files)
-</file_map>
+**`<file_map>`** — ASCII tree of the project with `*` marking selected files:
 
-<file_contents>
-File: /path/to/project/src/api/client.ts
-```typescript
-// file contents here
-```
+    /path/to/project
+    ├── src
+    │   ├── api
+    │   │   └── client.ts *
+    │   └── main.tsx *
+    └── package.json
 
-File: /path/to/project/src/main.tsx
-```tsx
-// file contents here
-```
-</file_contents>
+**`<file_contents>`** — full source code of each selected file, wrapped in fenced code blocks with language detection.
 
-<user_instructions>
-Your instructions here
-</user_instructions>
-```
+**`<user_instructions>`** — your custom instructions/prompt.
 
 ## Install
 
