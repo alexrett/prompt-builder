@@ -1,8 +1,12 @@
 # Prompt Builder
 
-A native macOS app for assembling LLM context prompts from your codebase. Select files from a project tree, add instructions, and copy the complete prompt to clipboard — ready to paste into ChatGPT, Claude, or any other LLM.
+A native macOS app for assembling large context prompts from your codebase. Select files from a project tree, add instructions, and copy the complete prompt to clipboard — ready to paste into Claude, ChatGPT, Ollama, or any other LLM.
 
-**Free and open-source alternative to [RepoPrompt](https://repoprompt.com/).**
+## Why?
+
+Modern LLMs like Claude (up to 1M tokens) and GPT-4 (128k) can digest entire codebases in a single prompt. The challenge is assembling that prompt — selecting the right files, formatting them properly, and keeping track of the token count.
+
+[RepoPrompt](https://repoprompt.com/) does this, but it costs money and caps you at ~35k tokens. **Prompt Builder is free, open-source, and has no token limit** — build prompts as large as your model can handle.
 
 ![File Selection](screenshots/file-selection.png)
 
