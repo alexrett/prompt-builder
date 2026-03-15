@@ -39,6 +39,12 @@ The generated prompt has three XML sections:
 
 ## Install
 
+### Homebrew
+
+```bash
+brew install --cask alexrett/tap/prompt-builder
+```
+
 ### Download
 
 Grab the latest `PromptBuilder.dmg` from [Releases](https://github.com/alexrett/prompt-builder/releases).
